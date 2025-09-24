@@ -23,6 +23,10 @@ Tech Stack
 - TypeScript 
 - Vite
 
+GitHub Page Link
+================
+https://czazian.github.io/PawsAndPreferences/
+
 Additional Projects 
 =================== 
 Besides the assessment project, I have recently building another application for fun, which you may check out for reference: 
