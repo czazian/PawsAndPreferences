@@ -76,3 +76,15 @@
     object-fit: cover;
     margin-bottom: 8px;
 }
+
+@media (max-width: 600px) {
+    .cat-list {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    .cat-list {
+        column-count: 2;
+    }
+}
