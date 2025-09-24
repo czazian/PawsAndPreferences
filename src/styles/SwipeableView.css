@@ -1,0 +1,141 @@
+.swipe-container {
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: relative;
+    background-color: #242424;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.swipe-feedback {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.like, .pass {
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.like {
+    background-color: #22c55e;
+}
+
+.pass {
+    background-color: #ef4444;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.cat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cat-card img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.tag-box {
+    padding: 15px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.tag {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: coral;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+.bottom-info {
+    text-align: center;
+}
+
+.like-text {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cat-remain {
+    font-size: 16px;
+}
+
+.like-count {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+}
+
+@media (max-width: 600px) {
+    .swipe-container {
+        padding: 15px 20px;
+    }
+
+    .cat-card img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tag-box {
+        gap: 5px;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .cat-remain {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    .swipe-container {
+        width: 80%;
+        padding: 18px 25px;
+    }
+
+    .cat-card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .tag-box {
+        gap: 8px;
+        padding: 12px 0;
+    }
+}
